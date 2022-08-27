@@ -1,4 +1,4 @@
-.hamburguer {
+/* .hamburguer {
   background-color: transparent;
   border: none;
   outline: none;
@@ -25,7 +25,7 @@
 
 .hamburguer.active .line:nth-child(3) {
   transform: translateY(-13px)rotate(-45deg);
-}
+} */
 
 /* SIMPLE FLOAT */
 
@@ -68,3 +68,21 @@
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }  */
+
+/* CSS TRANSITION */
+
+button {
+  height: 90px;
+  width: 290px;
+  font-size: 28px;
+  color: white;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  transition: background-color ease 1s, color ease 2s, width ease 1s;
+}
+
+button:hover {
+  background-color: pink;
+  color: black;
+  width: 600px;
+}
