@@ -1,0 +1,70 @@
+.hamburguer {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburguer .line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #01aeda;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform .5s, opacity .50s;
+}
+
+.hamburguer.active .line:nth-child(1) {
+  transform: translateY(13px)rotate(45deg);
+}
+
+.hamburguer.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.active .line:nth-child(3) {
+  transform: translateY(-13px)rotate(-45deg);
+}
+
+/* SIMPLE FLOAT */
+
+/* .quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* animation: rotate 1s ease; */
+  /* transition: ease 1s;
+} */
+
+/* .Animation {
+  transition: ease 1s;
+}
+
+.rotate {
+  animation: rotate 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(250px)rotate(180deg)
+  }
+}  */
+
+/* TRAINING ROTATE */
+
+/* #seta::after {
+  font-size: 30px;
+  margin: 0 200px;
+  width: 30px;
+}
+
+#seta{
+  background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}  */
